@@ -185,7 +185,7 @@ The workflow is triggered on a push to the `main` branch and consists of two mai
 - Image of dockerhub: ![image](/m346-ref-card-02/images/amazonecr.jpg)
 ### 2. Creating an ECS cluster
 
-![ECS Cluster](/m346-ref-card-02/images/aws-ecs-cluster-creation.png)
+![ECS Cluster](./images/aws-ecs-cluster-creation.png)
 
 After creation, you should be able to find the cluster in the list.
 
