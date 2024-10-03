@@ -160,7 +160,7 @@ jobs:
 
 3. Add DockerHub Credentials 
 
-![Alt-Text](/m346-ref-card-02/images/dockerhub.png)
+![Alt-Text](./images/dockerhub.png)
 
 # Build and Deploy Docker to AWS
 
@@ -182,7 +182,7 @@ The workflow is triggered on a push to the `main` branch and consists of two mai
     5. **Tag Docker Image**: Tags the built Docker image for ECR.
     6. **Push Docker Image to Amazon ECR**: Pushes the tagged Docker image to ECR.
 - Afterwards it will be sent to ecr and should look like this:
-- Image of dockerhub: ![image](/m346-ref-card-02/images/amazonecr.jpg)
+- Image of dockerhub: ![image](./images/amazonecr.jpg)
 ### 2. Creating an ECS cluster
 
 ![ECS Cluster](./images/aws-ecs-cluster-creation.png)
@@ -191,7 +191,7 @@ After creation, you should be able to find the cluster in the list.
 
 ### 3. Creating an ECS task definition
 
-![ECS Task Definition](/m346-ref-card-02/images/aws-ecs-taskdefinition-creation.png)
+![ECS Task Definition](./images/aws-ecs-taskdefinition-creation.png)
 
 For the environment variables, put in the details you already know. For the production environment, there is a JSON file for the task definition, located [here](./.github/aws/task-definition-prod.json). The pipeline will overwrite wrongly configured settings. Make sure tough, that the development task definition is correct.
 
@@ -199,11 +199,11 @@ For the environment variables, put in the details you already know. For the prod
 
 After creating the task definition, you can create a service for the task.
 
-![ECS Service](/m346-ref-card-02/images/aws-ecs-service-creation.png)
+![ECS Service](./images/aws-ecs-service-creation.png)
 
 As soon as the service is running, you can do the following to make sure that the application is now working correctly.
 
-![ECS Service IP Address](/m346-ref-card-02/images/aws-ecs-task-ip-address.png)
+![ECS Service IP Address](./images/aws-ecs-task-ip-address.png)
 
 
 ### 5. Deploy Job
